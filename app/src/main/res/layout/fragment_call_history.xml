@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jasper.depressionchat.CallHistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TODO:\nMaintain a list of call history, on click open a page which describe the analyzed result of the given call"
+        android:textStyle="bold|italic"
+        android:textColor="@color/grey_700"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"/>
+</FrameLayout>

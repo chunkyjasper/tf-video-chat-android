@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/default_avatar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded_corner2"
+        android:layout_toEndOf="@+id/imageView3">
+
+        <TextView
+            android:id="@+id/txtSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="50dp"
+            android:text="Jasper :"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            style="@android:style/TextAppearance.Small"
+            android:textColor="@color/grey_800" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtSenderName"
+            android:layout_below="@+id/txtSenderName"
+            android:layout_marginStart="2dp"
+            android:text="short"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_toEndOf="@id/txtMessage"
+            android:layout_below="@id/txtMessage"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            style="@android:style/TextAppearance.Small"
+            android:text="2017/12/25 10:30"
+            android:textColor="@color/grey_800"/>
+    </RelativeLayout>
+
+</RelativeLayout>
